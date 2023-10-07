@@ -1,0 +1,17 @@
+import uuid
+from django.utils.translation import gettext_lazy as _
+from django.db import models
+
+
+class Model(models.Model):
+    """
+    We use this every db entry
+    """
+    id = models.UUIDField(
+        _('id'),
+        primary_key=True,
+        default=uuid.uuid4
+    )
+
+    class Meta:
+        abstract = True
