@@ -1,4 +1,4 @@
-# Example of a project in django with some environment segregation gimmicks
+# Draft of a project in django with some environment segregation gimmicks
 
 In the core folder is where the main development happened.
 
